@@ -7,7 +7,6 @@ const [half, changeHalf] = React.useState(1);
 
 
   return (
-    
     <div className="bottomRow">
       {/* <div className="down">
         <h3 className="down__title">Down</h3>
@@ -33,7 +32,9 @@ const [half, changeHalf] = React.useState(1);
         >{half}</div>
       </div>
     </div>
-    
+    <section className="buttons">
+      <div>Button</div>
+    </section>
   );
 };
 

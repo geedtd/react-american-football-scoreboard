@@ -33,7 +33,9 @@ const [half, changeHalf] = React.useState(1);
         >{half}</div>
       </div>
     </div>
-    
+    <div className = {BottomRow}>
+    <button>YO</button>
+  </div>
   );
 };
 
