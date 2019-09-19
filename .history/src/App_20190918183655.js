@@ -41,7 +41,9 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             >{awayTeam}</h2>
             <div className="away__score">{awayScore}</div>
           </div>
-          </div>
+          
+        </div>
+        <div>half</div>
         <BottomRow />
       </section>
       <section className="buttons">

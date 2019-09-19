@@ -18,10 +18,10 @@ const [awayTeam, awayTeamName] = React.useState("Away");
           <div className="home">
             <h2 className="home__name"
             onClick={ () => {
-              homeTeamName("Lions");
+              homeTeam("Lions");
             }}
             onDoubleClick = { () => {
-              homeTeamName("Home");
+              homeTeam("Home");
             }}
             >{homeTeam}</h2>
 
@@ -41,7 +41,7 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             >{awayTeam}</h2>
             <div className="away__score">{awayScore}</div>
           </div>
-          </div>
+        </div>
         <BottomRow />
       </section>
       <section className="buttons">
@@ -49,29 +49,25 @@ const [awayTeam, awayTeamName] = React.useState("Away");
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button className="homeButtons__touchdown"
           onClick={ () => {
-            changeHomeScore(homeScore + 1);
+            changeHomeScore(homeScore + 7);
           }}
-          >Home Goal</button>
+          >Home Touchdown</button>
           <button className="homeButtons__fieldGoal"
           onClick={ () => {
-            changeHomeScore(homeScore + 1);
-          }}>Home Penalty</button>
-        </div>
-        <div>
-          <button >Half</button>
+            changeHomeScore(homeScore + 3);
+          }}>Home Field Goal</button>
         </div>
         <div className="awayButtons">
           <button className="awayButtons__touchdown" 
           onClick= { () => {
-            changeAwayScore(awayScore + 1);
+            changeAwayScore(awayScore + 7);
           }}
-          >Away Goal</button>
+          >Away Touchdown</button>
           <button className="awayButtons__fieldGoal"
           onClick= { () => {
-            changeAwayScore(awayScore + 1);
-          }}>Away Penalty</button>
+            changeAwayScore(awayScore + 3);
+          }}>Away Field Goal</button>
         </div>
-        
       </section>
     </div>
   );

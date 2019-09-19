@@ -41,7 +41,7 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             >{awayTeam}</h2>
             <div className="away__score">{awayScore}</div>
           </div>
-          </div>
+        </div>
         <BottomRow />
       </section>
       <section className="buttons">
@@ -57,13 +57,10 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             changeHomeScore(homeScore + 1);
           }}>Home Penalty</button>
         </div>
-        <div>
-          <button >Half</button>
-        </div>
         <div className="awayButtons">
           <button className="awayButtons__touchdown" 
           onClick= { () => {
-            changeAwayScore(awayScore + 1);
+            changeAwayScore(awayScore + 1;
           }}
           >Away Goal</button>
           <button className="awayButtons__fieldGoal"
@@ -71,7 +68,6 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             changeAwayScore(awayScore + 1);
           }}>Away Penalty</button>
         </div>
-        
       </section>
     </div>
   );

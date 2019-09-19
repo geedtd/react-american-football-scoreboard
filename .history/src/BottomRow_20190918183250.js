@@ -1,9 +1,11 @@
 import React,{useState} from "react";
 import "./App.css";
 
+const [half, changeHalf] = React.useState(1);
+
 function BottomRow() {
 
-const [half, changeHalf] = React.useState(1);
+
 
 
   return (
