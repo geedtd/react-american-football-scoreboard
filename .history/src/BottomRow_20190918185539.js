@@ -33,7 +33,6 @@ const [half, changeHalf] = React.useState(1);
         >{half}</div>
       </div>
     </div>
-    
   );
 };
 

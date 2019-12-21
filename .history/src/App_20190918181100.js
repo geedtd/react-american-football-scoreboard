@@ -41,10 +41,9 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             >{awayTeam}</h2>
             <div className="away__score">{awayScore}</div>
           </div>
-          </div>
+        </div>
         <BottomRow />
       </section>
-      
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
@@ -58,11 +57,10 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             changeHomeScore(homeScore + 1);
           }}>Home Penalty</button>
         </div>
-        
         <div className="awayButtons">
           <button className="awayButtons__touchdown" 
           onClick= { () => {
-            changeAwayScore(awayScore + 1);
+            changeAwayScore(awayScore + 1;
           }}
           >Away Goal</button>
           <button className="awayButtons__fieldGoal"
@@ -70,7 +68,6 @@ const [awayTeam, awayTeamName] = React.useState("Away");
             changeAwayScore(awayScore + 1);
           }}>Away Penalty</button>
         </div>
-        
       </section>
     </div>
   );
