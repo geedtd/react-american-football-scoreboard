@@ -131,9 +131,8 @@
 .timer-button {
   margin: 1rem;
   border-radius: 1rem;
-  background-color: rgb(76, 172, 168);
-} 
-
+  background-color: honeydew;
+}
 .time {
   font-size: 3rem;
   text-align: center;
